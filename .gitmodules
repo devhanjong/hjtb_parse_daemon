@@ -1,0 +1,9 @@
+[submodule "error_code_module"]
+	path = error_code_module
+	url = https://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@github.com/devhanjong/error_code_module.git
+[submodule "web_client_module"]
+	path = web_client_module
+	url = https://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@github.com/devhanjong/web_client_module.git
+[submodule "monitoring_module"]
+	path = monitoring_module
+	url = https://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@github.com/devhanjong/monitoring_module.git

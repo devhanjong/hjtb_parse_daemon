@@ -1,0 +1,3 @@
+rootProject.name = 'hj_parse_daemon'
+include 'web_client_module'
+include 'monitoring_module'

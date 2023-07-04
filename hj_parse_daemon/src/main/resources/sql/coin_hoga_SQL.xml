@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="kr.co.devhanjong.coin_parse_daemon.mapper.CoinHogaMapper">
+
+    <insert id="insertCoinHoga">
+        INSERT INTO coin_hoga (
+            vasp,
+            bid1_price,
+            bid1_qty,
+            bid2_price,
+            bid2_qty,
+            bid3_price,
+            bid3_qty,
+            bid4_price,
+            bid4_qty,
+            bid5_price,
+            bid5_qty,
+            ask1_price,
+            ask1_qty,
+            ask2_price,
+            ask2_qty,
+            ask3_price,
+            ask3_qty,
+            ask4_price,
+            ask4_qty,
+            ask5_price,
+            ask5_qty,
+            reg_date
+        )
+        VALUES
+        (
+            #{coinHogaTempDto.vasp},
+            #{coinHogaTempDto.bid1Price},
+            #{coinHogaTempDto.bid1Qty},
+            #{coinHogaTempDto.bid2Price},
+            #{coinHogaTempDto.bid2Qty},
+            #{coinHogaTempDto.bid3Price},
+            #{coinHogaTempDto.bid3Qty},
+            #{coinHogaTempDto.bid4Price},
+            #{coinHogaTempDto.bid4Qty},
+            #{coinHogaTempDto.bid5Price},
+            #{coinHogaTempDto.bid5Qty},
+            #{coinHogaTempDto.ask1Price},
+            #{coinHogaTempDto.ask1Qty},
+            #{coinHogaTempDto.ask2Price},
+            #{coinHogaTempDto.ask2Qty},
+            #{coinHogaTempDto.ask3Price},
+            #{coinHogaTempDto.ask3Qty},
+            #{coinHogaTempDto.ask4Price},
+            #{coinHogaTempDto.ask4Qty},
+            #{coinHogaTempDto.ask5Price},
+            #{coinHogaTempDto.ask5Qty},
+            NOW()
+        )
+    </insert>
+
+
+
+
+
+</mapper>
